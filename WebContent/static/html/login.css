@@ -1,0 +1,139 @@
+	#main{
+		width:1350px;
+		height:650px;
+		margin:0 auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: hidden;
+		margin-bottom: 100px;
+	}
+	#main .login-content{
+		width:330px;
+		height:350px;
+		background-color:#f8f8ff;
+		margin-top:100px;
+		margin-right:250px;
+		float:right;
+		overflow: hidden;
+	}
+	.login-name{
+		width:270px;
+		height:40px;
+		margin-top:10px;
+		margin-bottom:30px;
+		overflow: hidden;
+		margin-left:30px;
+	}
+	.login-name ul {
+		width:100%;
+		height:40px;
+	}
+	.login-name ul li{
+		width:49%;
+		height:40px;
+		float:left;
+		text-align: center;
+	}
+	.login-name ul li a{
+		font-size:20px;
+		color:#ADADAD;
+		text-align: center;
+	}
+	.login-name ul li a:hover{
+		font-size:20px;
+		color:#ADADAD;
+		text-align: center;
+		text-decoration: none;
+	}
+	.user{
+		border-right:2px solid #E5E5E5;
+	}
+	.name-active{
+		width:49%;
+		height:30px;
+		float:left;
+		text-align: center;
+		background-color:#C4E3F3;
+	}
+	.login-wrap{width: 280px;
+				margin-left: 28px;
+				height: 302px;
+				position: relative;
+	}
+	#admin{
+		position:absolute;
+		/*z-index: 2;*/
+	}
+	#user{
+		position:absolute;
+		/*z-index: 1;*/
+		
+	}		
+	.form-group{height:42px;
+				color: #bebdbd;
+				width:280px;
+				margin-bottom:20px;
+	}
+
+	.form-group input{height: 42px;
+									width: 280px;
+									font-size: 12px;
+									margin: 0 auto;
+									overflow: hidden;
+									text-indent: 25px;
+									}
+	.form-group .glyphicon{left: 0px;
+											font-size: 14px;
+											top: 5px;}
+
+	.login-wrap .password-control{font-size: 14px;
+													color: #999999;
+													margin-bottom: 40px;}
+
+	.login-wrap .password-control input,label,span{float: left}
+
+	.login-wrap .password-control input{height: 14px;
+														width: 14px;
+														margin-top: 5px;}
+	.login-wrap .password-control .remember-text{margin-left: 10px;}																									
+	.login-wrap .password-control .forget-password{margin-left: 120px;}
+
+	.login-wrap .btn-primary {width: 280px;
+							  height: 42px;
+							  font-size: 18px;
+												background-color: #ff5511;
+												margin:0 auto;
+												letter-spacing: 10px;}
+	.btn-primary:active {
+		border:1px solid transparent;
+   		 background-color: #ff4500 !important;
+	}
+	.btn{
+		border:1px solid transparent;
+	}
+	.tips{width: 280px;height: 15px;color: red;font-size: 12px;}
+	
+	/*选框*/
+	.remember-password {display: none;}
+	
+	.remember-password + label {
+		width: 14px;
+		height: 14px;
+		display: inline-block;
+		position: relative;
+		margin-top: 4px;
+		margin-left: 4px;
+		border:2px solid #ccc;
+	}
+	.remember-password:checked + label {border:2px solid #ff5511;}
+
+	.remember-password:checked + label:after {
+		content: '\2713';
+		position: absolute;
+		top: -10px;
+		left: -1px;
+		width: 14px;
+		height: 14px;
+		color: #ff5511;
+		font-size: 18px;
+	}

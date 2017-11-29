@@ -1,0 +1,213 @@
+.main-head{
+	height:50px;
+	width:94%;
+	margin-left:3%;
+	margin-right:3%;
+}
+.main-head a:link{
+	
+	color:#000;
+	text-decoration: none;
+}
+.main-head a:hover{
+	
+	color:#999;
+	text-decoration:none;
+}
+.main-GoodsBox{
+	height:500px;
+	width:94%;
+	margin-left:3%;
+	margin-right:3%;
+	
+}
+.main-GoodsBoxright{
+	height:470px;
+	width:60%;
+	float:right;
+	
+}
+.goodsMessTop{
+	height:60px;	
+	font-size:24px;	
+}
+.goodsMessPrice{
+	height:150px;	
+	font-size:18px;	
+	background-color:#E3E3E3;
+}
+#fontPrice1{
+	font-weight:bold;
+	font-size:small;
+	color:#666;
+}
+#fontPrice2{
+	font-weight:bold;
+	font-size:small;
+	color:#666;
+}
+#fontPrice3{
+	font-weight:bold;
+	font-size:small;
+	color:#666;
+}
+#fontPrice4{
+	font-weight:bold;
+	font-size:medium;
+	color:#C00;
+}
+.goodsMessNum{
+	height: 50px;
+	width: 100%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: dashed;
+	border-right-style: dashed;
+	border-bottom-style: dashed;
+	border-left-style: dashed;	
+	
+}
+.number-choose{
+	width:100px;
+	height:30px;
+	margin-top:10px;
+	margin-left:10px;
+	overflow: hidden;
+}
+.num-btn{
+	width:25px;
+	height:30px;
+	background-color:#DDDDDD;
+	font-size:14px;
+	color:#111111;
+	border:0px;
+}
+.reduce{
+	float:left;
+}
+.good-number{
+	width:28px;
+	height:20px;
+	margin-top:5px;
+	border:1px solid #DDDDDD;
+	margin-left:4px;
+	float:left;
+}
+.add{
+	margin-left:4px;
+	float:left;
+}
+.goodsMessConfirm{
+	height:80px;		
+	width:100%;	
+	margin-top:20px;
+	
+	
+}
+#ljgm{
+	height: 30px;
+	width: 100px;
+	background-color:#FFD0D0;
+	border: 1px solid #F00;
+	margin-left:20px;
+	text-align:center;
+	cursor:pointer;
+	float:left;
+	margin-top:50px;
+	
+}
+#jrgwc{
+	height:30px;		
+	width:100px;	
+	background-color:#F00;
+	margin-left:60px;
+	text-align:center;
+	float:left;
+	cursor:pointer;
+	margin-top:50px;
+}
+.goodMessSelc{
+	margin-top:10px;
+	height: 50px;
+	color: #CCC;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #CCC;	
+}
+.address{
+	height:50px;
+	background-color:#FFF;
+	font-size:16px;	
+}
+.main-GoodsBoxleft{
+	height:470px;
+	width:38%;
+	float:left;
+	background-color:#CCC;
+}
+.main-GoodsBoxleft img{
+	height:auto;
+	max-height:100%;
+
+	
+}
+.main-MessageBox{
+	height: 600px;
+	width: 94%;
+	margin-left: 3%;
+	margin-right: 3%;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+}
+.main-MessageBoxHead{
+	margin-top: 10px;
+	height: 50px;
+	font-size: 18px;
+	background-color:#E5E5E5;
+	text-align: center;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #A00;		
+}
+#showMeLeft{
+	width:12%;
+	float:left;
+	height:200px;
+	
+}
+#showMeRight{
+	width: 88%;
+	float: right;
+	height: 200px;
+	border: 1px solid #D1D1D1;	
+}
+.MBZJbox{
+	margin-top:20px;
+	height:200px;
+	width:100%;
+}
+#showMeRightHead{
+	height:40px;
+	width:100%;
+	font-size:medium;
+	color:#999;
+	background-color:#EBEBEB;
+}
+.main-MessageBoxZJ{
+	height:400px;
+	margin-top:5px;
+	width:100%;
+	
+}

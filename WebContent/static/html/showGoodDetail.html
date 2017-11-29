@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/sweetalert/sweetalert.css">
+		<link rel="stylesheet" href="../css/header.css">
+		<link rel="stylesheet" href="../css/footer.css">
+		<link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/showGoodDetail.css">
+	</head>
+	<body>
+		<div id="max-wai">
+			<div id="header">
+				<div id="header-top">
+					<div class="header-top-left">
+						<span><a href="../html/login.jsp">亲，请登录</a></span>
+						<span><a href="../html/register.jsp">免费注册</a></span>
+					</div>
+					<div class="header-top-right">
+						<div class="header-box">
+							<a href="../index.jsp">商城首页</a>
+						</div>
+						<div class="header-box">
+							<span></span>
+							<a href="../html/personal_information.jsp" target="_blank">个人中心</a>
+						</div>
+						<div class="header-box">
+							<span></span>
+							<a href="../html/shoppingCar.jsp" target="_blank">购物车</a>
+						</div>
+					</div>
+				</div>
+				<div id="header-center">
+					<div class="header-logo">
+						<div class="logo-img">
+							<img src="../img/logo.png" > 
+						</div>
+						<div class="logo-word">
+							<span>乐购</span>
+						</div>
+					</div>
+					<div class="header-search">
+						<input type="text" class="simple-search" name="simple-search" placeholder="搜索">
+						<button class="btn s-s-btn">搜索</button>
+					</div>
+				</div>
+				<div class="long-title">
+					<div class="all-goods">
+						<ul>
+							<li>全部分类</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- add -->
+			<div id="main">
+            	<div class="main-head">
+                	<br>
+                	<a href="../index.jsp" >首页</a>&nbsp;&nbsp;<font color="#999999">/&nbsp;&nbsp;</font><a href="#" >分类</a>&nbsp;&nbsp;<font color="#999999">/&nbsp;&nbsp;<a href="#" style="color:#999">内容</a></font>
+                </div>
+				<div class="main-GoodsBox">
+                	<div class="main-GoodsBoxright"> 
+                    	<div class="goodsMessTop"><strong>良品铺子 手剥松子 210g 坚果炒货</strong></div>
+						<div class="goodsMessPrice">
+						  <table width="100%" height="150px" border="0" cellspacing="20px">
+						     <tr>
+						      <td width="80px" id="fontPrice1">店铺优惠</td>
+						      <td id="fontPrice4">购物满两件打八折，满三件打七折</font></td>
+					        </tr>
+                            <tr>
+						      <td width="80px" id="fontPrice2">促销价</td>
+						      <td><font color="#B70000">¥</font><font size="+3" color="#B70000"><strong>56.8</strong></font></td>
+					        </tr>
+						    <tr>
+						      <td width="80px" id="fontPrice3">原价</td>
+						      <td><font size="+1">¥98</font></td>
+					        </tr>
+					      </table>
+						</div>
+                      <div class="goodMessSelc"><br>确认商品信息选择<br></div>
+                      <div class="address">配送至</div>
+                      <div class="goodsMessNum">
+                      	<div class="number-choose">
+							<button class="num-btn reduce" id="reduce">-</button>
+							<div class="good-number">1</div>
+							<button class="num-btn add" id="add">+</button>
+						</div>
+                      </div>
+                     <div class="goodsMessConfirm">
+                       <div id="ljgm" title="立即购买"><a href="buyGoods.jsp" target="_blank"><font color="#FF0000">立即购买</font></a></div>
+                       <div id="jrgwc" title="加入购物车"><a href="#" id="shopCarSwal"><font color="#FFFFFF"><strong>加入购物车</strong></font></a></div>
+                     </div>
+                    </div>
+                	<div class="main-GoodsBoxleft"><img src="../img/imgsearch1.jpg"></div>
+                    
+                </div>
+                
+        <div class="main-MessageBox">
+             <div class="main-MessageBoxHead"><font color="#A00"><strong>全部评价</strong></font>					  			 </div>
+             <div class="main-MessageBoxZJ">
+             
+             	<div class="MBZJbox">
+                	<div id="showMeRight">
+                    	<div id="showMeRightHead">【匿名用户】【评价时间】</div>
+                        评价内容
+                    </div>
+                    <div id="showMeLeft"><img src="../img/2345截图20170516112045.jpg"></div>
+                </div>
+                <div class="MBZJbox">
+                	<div id="showMeRight">
+                    	<div id="showMeRightHead">【匿名用户】【评价时间】</div>
+                        评价内容
+                    </div>
+                    <div id="showMeLeft"><img src="../img/2345截图20170516112045.jpg"></div>
+                </div>
+                
+             </div>
+                
+		</div>
+			
+			<div id="footer">
+				<div class="footer1">
+					<ul>
+						<li>成都信息工程大学</li>
+						<li>乐购商城</li>
+						<li>支付宝</li>
+						<li>微信</li>
+						<li>物流</li>
+					</ul>
+				</div>
+				<div class="footer2">
+					<span>关于成都信息工程大学</span>
+					<span>合作伙伴</span>
+					<span>联系我们</span>
+					<span>1111235</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../assets/jquery/jquery-3.2.0.js"></script>
+	<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="../assets/sweetalert/sweetalert.min.js" ></script> 
+	<script type="text/javascript" src="../js/number_choose.js" ></script> 
+	<script type="text/javascript" src="../js/shoppingCar.js" ></script> 
+</html>

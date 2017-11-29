@@ -1,0 +1,69 @@
+a{
+	color: #333;
+}
+a:hover{
+	text-decoration: none;
+}
+input{
+	outline: none;
+}
+.searchabout{
+	padding: 10px; font-size: 14px; vertical-align: baseline; font-family: "Microsoft Yahei"; color: #666;
+}
+.sort{
+	padding: 0px; border-radius: 0px 0px 4px 4px; margin: 10px 10px; font-size: 12px; width: auto; overflow: hidden;
+}
+.sort li{
+	height: 35px; line-height: 35px; width: auto; background-color: #F5F5F5; color: #000; float: left;
+}
+.sort .first{
+	border: 1px solid #DDD; border-right: 1px dotted #DDD; padding: 0 20px;
+}
+.sort .lprice{
+	border: 1px solid #DDD; border-left: none; padding: 0 20px; border-right: none;
+}
+.sort .mprice{
+	border-top: 1px solid #DDD; border-bottom: 1px solid #DDD;
+}
+.sort .rprice{
+	border: 1px solid #DDD; padding: 0 20px; border-left: none; border-right: 1px dotted #DDD;
+}
+.sort .sprice{
+	border: 1px solid #DDD; padding: 0 10px; border-left: none;
+}
+.sort input{
+	width: 70px; height: 26px; line-height: 26px; border:1px solid #DDD; margin-top: 4px; text-indent: 4px;
+}
+.sprice input{
+	width:50px; height: 28px; line-height: 28px; border:1px solid #FFF; margin-top: 2px; background-color: #FF5511; color: #FFF; border-radius: 4px;
+}
+.show-content{
+	display: block; padding: 0px; margin: 0px; list-style: none;
+}
+.show-content li{
+	width: 260px; float: left;
+}
+.show-content li:hover{
+	border:1px solid #ff5511;
+}
+.i-pic{
+	margin:10px; border: 1px solid #E8E8E8; background-color: #FFF; overflow: hidden; position: relative; cursor: pointer; font-size: 14px; 
+}
+img{
+	width: 100%;
+}
+.i-pic .f1{
+	font-size: 16px;
+}
+.lf{
+	 float: left;
+}
+.price{
+	color: #FF5511;
+}
+#goods-page{
+	width:100%;
+	/*height:50px;*/
+	margin-top:15px;
+	padding-top:20px;
+}

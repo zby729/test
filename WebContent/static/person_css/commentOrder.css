@@ -1,0 +1,4 @@
+.order-comment{display:none;font-family: tahoma,tarial,"Lantinghei SC","Microsoft Yahei";font-size:14px;text-align:center;color:#c5c5c5;margin:100px auto;}
+.order-comment input{color:#000;}		
+.order-comment .button{padding:2px 5px;border-radius:5px 5px;background-color:#82aac5;color:#fff;cursor: pointer;
+			border:none; }

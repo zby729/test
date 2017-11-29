@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/header.css">
+		<link rel="stylesheet" href="../css/footer.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/buyGoods.css">
+	</head>
+	<body>
+		<div id="max-wai">
+			<div id="header">
+				<div id="header-top">
+					<div class="header-top-left">
+						<span><a href="../html/login.jsp">亲，请登录</a></span>
+						<span><a href="../html/register.jsp">免费注册</a></span>
+					</div>
+					<div class="header-top-right">
+						<div class="header-box">
+							<a href="../index.jsp">商城首页</a>
+						</div>
+						<div class="header-box">
+							<span></span>
+							<a href="../html/personal_information.jsp" target="_blank">个人中心</a>
+						</div>
+						<div class="header-box">
+							<span></span>
+							<a href="../html/shoppingCar.jsp" target="_blank">购物车</a>
+						</div>
+					</div>
+				</div>
+				<div id="header-center">
+					<div class="header-logo">
+						<div class="logo-img">
+							<img src="../img/logo.png" > 
+						</div>
+						<div class="logo-word">
+							<span>乐购</span>
+						</div>
+					</div>
+					<div class="header-search">
+						<input type="text" class="simple-search" name="simple-search" placeholder="搜索">
+						<button class="btn s-s-btn">搜索</button>
+					</div>
+				</div>
+			</div>
+			<!--address 252*151-->
+			<div id="main">
+				<div id="main-wrap">
+					<div class="order-address">
+						<div class="address-title">
+							<span class="make-sure">确认收货地址</span>
+							<button class="new-address" data-toggle="modal" data-target="#myModal">使用新地址</button>
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											<h4 class="modal-title" id="myModalLabel">新增地址/Add address</h4>
+										</div>
+										<div class="modal-body">
+											<form role="form">
+												<div class="from-group">
+													<label class="control-label"><h5>收货人</h5></label>
+													<input class="form-control " required="required" name="new-people-name" id="new-people-name" type="txet" placeholder="收货人">
+												</div>
+												<div class="from-group">
+													<label class="control-label"><h5>收货人电话</h5></label>
+													<input class="form-control " required="required" name="new-phone-number" id="new-phone-number" type="number" maxlength="11" placeholder="手机号必填">
+												</div>
+												<div class="from-group">
+													<label class="control-label"><h5>详细地址</h5></label>
+													<textarea class="form-control" name="new-address" id="new-address" type="text" cols="1" rows="5"></textarea>
+												</div>
+											</form>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" id="address-save" data-dismiss="modal">保存</button>
+											<button type="button" class="btn btn-default" id="address-give-up" data-dismiss="modal">取消</button>
+										</div>
+									</div>
+									<!-- /.modal-content -->
+								</div>
+								<!-- /.modal -->
+							</div>
+						</div>
+						<div class="address-wrap">
+							<div class="address" style="background-image:url(../img/address-hover.png)">
+								<div class="add-content">
+									<div class="add-content1">
+										<div class="add-name"><span>艾迪 15871145629</span></div>
+										<div class="default-add"><span>默认地址</span></div>
+									</div>
+									<div class="add-content2">
+										<span class="add-detail">收货地址：湖北省武汉市洪山xxxxxxxxxxx</span>
+									</div>
+									<div class="add-choose">
+										<a>删除</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-information">
+						<div class="order-information-title">
+							<span>确认订单信息</span>
+						</div>
+						<div class="order-information-table">
+							<table class="table">
+								<thead>
+									<tr>
+										<th colspan="2">商品信息</th>
+										<th>单价</th>
+										<th>数量</th>
+										<th>金额</th>
+										<th>配送方式</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="goods-img">
+												<img src="../img/good-buy.jpg"> 
+											</div>
+										</td>
+										<td>
+											<p class="good-name">美康粉黛最美唇膏 持久保湿 滋润防水不掉色</p>
+											<p class="good-type">颜色：12#川南玛瑙 包装：裸妆</p>
+										</td>
+										<td>39.00</td>
+										<td>
+											<div class="number-choose">
+												<button class="num-btn reduce" id="reduce">-</button>
+												<div class="good-number">3</div>
+												<button class="num-btn add" id="add">+</button>
+											</div>
+										</td>
+										<td>117.00</td>
+										<td>包邮</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="order-submit">
+						<div class="order-money">
+							<span>合计（含运费）￥<label>244.00</label></span>
+						</div>
+						<div class="order-show">
+							<div class="order-show-wrap">
+								<div class="order-money-show">
+									<p>实付款：<span>￥<label>244.00</label></span></p>
+								</div>
+								<div class="order-address-show">
+									<span><label>寄送至：</label>湖北省武汉市洪山xxxxxxxxxxx</span>
+								</div>
+								<div class="order-name-show">
+									<span><lable>收货人：</lable>艾迪 15871145629</span>
+								</div>
+							</div>
+						</div>
+						<div class="order-submit-btn">
+							<button class="submit-btn">提交订单</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="footer">
+				<div class="footer1">
+					<ul>
+						<li>成都信息工程大学</li>
+						<li>乐购商城</li>
+						<li>支付宝</li>
+						<li>微信</li>
+						<li>物流</li>
+					</ul>
+				</div>
+				<div class="footer2">
+					<span>关于成都信息工程大学</span>
+					<span>合作伙伴</span>
+					<span>联系我们</span>
+					<span>1111235</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../assets/jquery/jquery-3.2.0.js"></script>
+	<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="../js/number_choose.js" ></script> 
+</html>

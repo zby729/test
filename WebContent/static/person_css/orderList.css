@@ -1,0 +1,7 @@
+.order-list{font-family:tahoma,tarial,"Lantinghei SC","Microsoft Yahei";font-size:14px;color:#000;margin:20px auto;text-align: center;}
+			.order-list table,th,td{text-align:center;border:1px solid #bbb;}
+
+			.order-list td,th{padding:2px 4px;}
+			.order-list td span{cursor: pointer;font-size:14px;line-height:20px;padding:0 10px; background-color:#82aac5;color:#fff;
+				border-radius:5px 5px;}
+			.order-list .theader{background-color:#f3a005;}

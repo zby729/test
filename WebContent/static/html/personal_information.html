@@ -1,0 +1,615 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../person_css/main-side.css">
+	<link href="../person_css/admin.css" rel="stylesheet" type="text/css">
+	<link href="../person_css/amazeui.css" rel="stylesheet" type="text/css">
+
+	<link href="../person_css/personal.css" rel="stylesheet" type="text/css">
+	<link href="../person_css/infstyle.css" rel="stylesheet" type="text/css">
+	<link href="../person_css/orstyle.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="../person_css/orderList.css" type="text/css">
+	<link rel="stylesheet" href="../person_css/commentOrder.css">
+	<link href="../person_css/userTips.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="../person_css/newsAnswer.css" type="text/css">
+
+	<script src="../person_js/jquery.min.js"></script>
+	<script src="../person_js/newsAnswer.js"></script>
+
+	<script src="../person_js/amazeui.js"></script>			
+	<style type="text/css">
+		body{background-color:#f5f8fa;}
+		#main{width:85%;height:700px;margin:10px auto;overflow:hidden;font-family: tahoma,tarial,"Lantinghei SC","Microsoft Yahei";}
+
+		.main-article{width:900px;height:700px;float:left;margin-top:0;margin-left:25px;border:1px solid #eee;background-color:#ECFFFF; filter:Alpha(opacity=50);}
+		.info-main{margin-top:35px;}
+		.info-main p{font-size:20px;line-height:40px;color:#000;padding:0 2px;}
+		.order-details{margin:0 auto; display:none;padding:10px 10px;}
+		.user-orderinfo{display:none;}
+		.user-tips{width:90%;margin:50px auto;display:none;}
+		.user-tips p{font-size:20px;line-height:40px;color:#000;padding:1px 5px;}
+		.tips-answer{width:600px;padding:10px 10px;margin:35px auto;display:none;}
+	</style>
+	<script>
+		function showInfomain(){
+			$('.info-main').show();
+		}
+		function hideInfomain(){
+			$('.info-main').hide();
+		}
+		function showOrderInfo(){
+			$('.user-orderinfo').show();
+		}
+		function hideOrderInfo(){
+			$('.user-orderinfo').hide();
+		}
+		function showTips(){
+			$('.user-tips').show();
+		}
+		function hideTips(){
+			$('.user-tips').hide();
+		}
+		function showTipsanswer(){
+			$('.tips-answer').show();
+		}
+		function hideTipsanswer(){
+			$('.tips-answer').hide();
+		}
+		function showOrderList(){
+			$('.order-list').show();
+		}
+		function hideOrderList(){
+			$('.order-list').hide();
+		}
+		function showOrderComment(){
+			$('.order-comment').show();
+		}
+		function hideOrderComment(){
+			$('.order-comment').hide();
+		}
+		function showOrderDetails(){
+			$('.order-details').show();
+		}
+		function hideOrderDetails(){
+			$('.order-details').hide();
+		}
+	</script>
+</head>
+<body>
+	<div id="max-wai">
+		<div id="header">
+			<div id="header-top">
+					<div class="header-top-left">
+						<span><a href="../html/login.jsp">亲，请登录</a></span>
+						<span><a href="../html/register.jsp">免费注册</a></span>
+					</div>
+					<div class="header-top-right">
+						<div class="header-box">
+							<a href="../index.jsp">商城首页</a>
+						</div>
+						<div class="header-box">
+							<span></span>
+							<a href="../html/personal_information.jsp" target="_blank">个人中心</a>
+						</div>
+						<div class="header-box">
+							<span></span>
+							<a href="../html/shoppingCar.jsp" target="_blank">购物车</a>
+						</div>
+					</div>
+				</div>
+			<div id="header-center">
+				<div class="header-logo">
+					<div class="logo-img">
+						<img src="../img/logo.png" > 
+					</div>
+					<div class="logo-word">
+						<span>乐购</span>
+					</div>
+				</div>
+				<div class="header-search">
+					<input type="text" class="simple-search" name="simple-search" placeholder="搜索">
+					<button class="btn s-s-btn">搜索</button>
+				</div>
+			</div>
+				<!--<div class="long-title">
+					<div class="all-goods">
+						<ul>
+							<li>全部分类</li>
+						</ul>
+					</div>
+				</div>-->
+			</div>
+			
+			<div id="main">
+				<!--  侧边导航开始 -->
+				<div class="main-aside" >
+					<div></div>
+					<ul>
+						<li id='person_title'>个人中心</li>
+						<li><a herf="#" onclick="showInfomain();hideOrderDetails();hideTips();hideTipsanswer();">个人信息</a></li>
+						<li><a herf="#" onclick="showOrderDetails();showOrderList();hideInfomain();hideTips();hideTipsanswer();hideOrderComment();hideOrderInfo();">订单详情</a></li>
+						<li><a herf="#" onclick="showTips();hideInfomain();hideOrderDetails();hideTipsanswer();">我的留言</a></li>
+						<li><a herf="#" onclick="showTipsanswer();hideInfomain();hideTips();hideOrderDetails()">留言回复</a></li>	
+					</ul>
+				</div>
+				<!--  侧边导航结束 -->
+				<div class="main-article">
+					<!---->
+					<div class="info-main">
+						<p>个人资料|Personal information</p>
+						<hr/>
+						<form class="am-form am-form-horizontal">
+
+
+
+							<div class="am-form-group">
+								<label for="user-name" class="am-form-label">姓名</label>
+								<div class="am-form-content">
+									<input type="text" id="user-name2" placeholder="name">
+
+								</div>
+							</div>
+
+							<div class="am-form-group">
+								<label for="user-name2" class="am-form-label">地址</label>
+								<div class="am-form-content">
+									<input type="text" id="user-name2" placeholder="address">
+									<small>请确认地址</small>
+								</div>
+							</div>
+
+							<div class="am-form-group">
+								<label class="am-form-label">性别</label>
+								<div class="am-form-content sex">
+									<label class="am-radio-inline">
+										<input type="radio" name="radio10" value="male" data-am-ucheck/> 男
+									</label>
+									<label class="am-radio-inline">
+										<input type="radio" name="radio10" value="female" data-am-ucheck/> 女
+									</label>
+									<label class="am-radio-inline">
+										<input type="radio" name="radio10" value="secret" data-am-ucheck/> 保密
+									</label>
+								</div>
+							</div>
+
+							<div class="am-form-group">
+								<label for="user-birth" class="am-form-label">生日</label>
+								<div class="am-form-content birth">
+									<div class="birth-select">
+										<select data-am-selected>
+											<option value="a">2015</option>
+											<option value="b">1987</option>
+										</select>
+										<em>年</em>
+									</div>
+									<div class="birth-select2">
+										<select data-am-selected>
+											<option value="a">12</option>
+											<option value="b">8</option>
+										</select>
+										<em>月</em></div>
+										<div class="birth-select2">
+											<select data-am-selected>
+												<option value="a">21</option>
+												<option value="b">23</option>
+											</select>
+											<em>日</em></div>
+										</div>
+
+									</div>
+									<div class="am-form-group">
+										<label for="user-phone" class="am-form-label">电话</label>
+										<div class="am-form-content">
+											<input id="user-phone" placeholder="telephonenumber" type="tel">
+
+										</div>
+									</div>
+									<div class="am-form-group">
+										<label for="user-email" class="am-form-label">电子邮件</label>
+										<div class="am-form-content">
+											<input id="user-email" placeholder="Email" type="email">
+
+										</div>
+									</div>
+									<div class="am-form-group address">
+										<label for="user-address" class="am-form-label">收货地址</label>
+										<div class="am-form-content address">
+											<a href="address.jsp">
+												<p class="new-mu_l2cw">
+													<span class="province">湖北</span>省
+													<span class="city">武汉</span>市
+													<span class="dist">洪山</span>区
+													<span class="street">雄楚大道666号(中南财经政法大学)</span>
+													<span class="am-icon-angle-right"></span>
+												</p>
+											</a>
+
+										</div>
+									</div>
+									<div class="am-form-group safety">
+										<label for="user-safety" class="am-form-label">账号安全</label>
+										<div class="am-form-content safety">
+											<a href="safety.jsp">
+
+												<span class="am-icon-angle-right"></span>
+
+											</a>
+
+										</div>
+									</div>
+									<div class="info-btn">
+										<div class="am-btn am-btn-danger">保存修改</div>
+									</div>
+
+								</form>
+							</div>
+							<!---->
+
+							<!---->
+							<div class="order-details">
+							<div class="user-orderinfo">
+
+								<!--标题 -->
+								<div class="am-cf am-padding">
+									<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">订单详情</strong> / <small>Order&nbsp;details</small></div>
+								</div>
+								<hr/>
+								<!--进度条-->
+								<div class="m-progress">
+									<div class="m-progress-list">
+										<span class="step-1 step">
+											<em class="u-progress-stage-bg"></em>
+											<i class="u-stage-icon-inner">1<em class="bg"></em></i>
+											<p class="stage-name">拍下商品</p>
+										</span>
+										<span class="step-2 step">
+											<em class="u-progress-stage-bg"></em>
+											<i class="u-stage-icon-inner">2<em class="bg"></em></i>
+											<p class="stage-name">卖家发货</p>
+										</span>
+										<span class="step-3 step">
+											<em class="u-progress-stage-bg"></em>
+											<i class="u-stage-icon-inner">3<em class="bg"></em></i>
+											<p class="stage-name">确认收货</p>
+										</span>
+										<span class="step-4 step">
+											<em class="u-progress-stage-bg"></em>
+											<i class="u-stage-icon-inner">4<em class="bg"></em></i>
+											<p class="stage-name">交易完成</p>
+										</span>
+										<span class="u-progress-placeholder"></span>
+									</div>
+									<div class="u-progress-bar total-steps-2">
+										<div class="u-progress-bar-inner"></div>
+									</div>
+								</div>
+								<div class="order-infoaside">
+									<div class="order-logistics">
+										<a href="logistics.jsp">
+											<div class="icon-log">
+												<i><img src="../images/receive.png"></i>
+											</div>
+											<div class="latest-logistics">
+												<p class="text">已签收,签收人是青年城签收，感谢使用天天快递，期待再次为您服务</p>
+												<div class="time-list">
+													<span class="date">2015-12-19</span><span class="week">周六</span><span class="time">15:35:42</span>
+												</div>
+												<div class="inquire">
+													<span class="package-detail">物流：天天快递</span>
+													<span class="package-detail">快递单号: </span>
+													<span class="package-number">373269427868</span>
+													<a href="logistics.jsp">查看</a>
+												</div>
+											</div>
+											<span class="am-icon-angle-right icon"></span>
+										</a>
+										<div class="clear"></div>
+									</div>
+									<div class="order-addresslist">
+										<div class="order-address">
+											<div class="icon-add">
+											</div>
+											<p class="new-tit new-p-re">
+												<span class="new-txt">小叮当</span>
+												<span class="new-txt-rd2">159****1622</span>
+											</p>
+											<div class="new-mu_l2a new-p-re">
+												<p class="new-mu_l2cw">
+													<span class="title">收货地址：</span>
+													<span class="province">湖北</span>省
+													<span class="city">武汉</span>市
+													<span class="dist">洪山</span>区
+													<span class="street">雄楚大道666号(中南财经政法大学)</span></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="order-infomain">
+
+										<div class="order-top">
+											<div class="th th-item">
+												<td class="td-inner">商品</td>
+											</div>
+											<div class="th th-price">
+												<td class="td-inner">单价</td>
+											</div>
+											<div class="th th-number">
+												<td class="td-inner">数量</td>
+											</div>
+											<div class="th th-operation">
+												<td class="td-inner">商品操作</td>
+											</div>
+											<div class="th th-amount">
+												<td class="td-inner">合计</td>
+											</div>
+											<div class="th th-status">
+												<td class="td-inner">交易状态</td>
+											</div>
+											<div class="th th-change">
+												<td class="td-inner">交易操作</td>
+											</div>
+										</div>
+
+										<div class="order-main">
+
+											<div class="order-status3">
+												<div class="order-title">
+													<div class="dd-num">订单编号：<a href="javascript:;">1601430</a></div>
+													<span>成交时间：2015-12-20</span>
+													<!--    <em>店铺：小桔灯</em>-->
+												</div>
+												<div class="order-content">
+													<div class="order-left">
+														<ul class="item-list">
+															<li class="td td-item">
+																<div class="item-pic">
+																	<a href="#" class="J_MakePoint">
+																		<img src="../images/kouhong.jpg_80x80.jpg" class="itempic J_ItemImg">
+																	</a>
+																</div>
+																<div class="item-info">
+																	<div class="item-basic-info">
+																		<a href="#">
+																			<p>美康粉黛醉美唇膏 持久保湿滋润防水不掉色</p>
+																			<p class="info-little">颜色：12#川南玛瑙
+																				<br/>包装：裸装 </p>
+																			</a>
+																		</div>
+																	</div>
+																</li>
+																<li class="td td-price">
+																	<div class="item-price">
+																		333.00
+																	</div>
+																</li>
+																<li class="td td-number">
+																	<div class="item-number">
+																		<span>×</span>2
+																	</div>
+																</li>
+																<li class="td td-operation">
+																	<div class="item-operation">
+																		退款/退货
+																	</div>
+																</li>
+															</ul>
+
+															<ul class="item-list">
+																<li class="td td-item">
+																	<div class="item-pic">
+																		<a href="#" class="J_MakePoint">
+																			<img src="../images/62988.jpg_80x80.jpg" class="itempic J_ItemImg">
+																		</a>
+																	</div>
+																	<div class="item-info">
+																		<div class="item-basic-info">
+																			<a href="#">
+																				<p>礼盒袜子女秋冬 纯棉袜加厚 韩国可爱 </p>
+																				<p class="info-little">颜色分类：李清照
+																					<br/>尺码：均码</p>
+																				</a>
+																			</div>
+																		</div>
+																	</li>
+																	<li class="td td-price">
+																		<div class="item-price">
+																			333.00
+																		</div>
+																	</li>
+																	<li class="td td-number">
+																		<div class="item-number">
+																			<span>×</span>2
+																		</div>
+																	</li>
+																	<li class="td td-operation">
+																		<div class="item-operation">
+																			退款/退货
+																		</div>
+																	</li>
+																</ul>
+
+															</div>
+															<div class="order-right">
+																<li class="td td-amount">
+																	<div class="item-amount">
+																		合计：676.00
+																		<p>含运费：<span>10.00</span></p>
+																	</div>
+																</li>
+																<div class="move-right">
+																	<li class="td td-status">
+																		<div class="item-status">
+																			<p class="Mystatus">卖家已发货</p>
+																			<p class="order-info"><a href="logistics.jsp">查看物流</a></p>
+																			<p class="order-info"><a href="#">延长收货</a></p>
+																		</div>
+																	</li>
+																	<li class="td td-change">
+																		<div class="am-btn am-btn-danger anniu" onclick="showOrderList();hideOrderInfo();">
+																			确认收货</div>
+																		</li>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+											<div class="order-list" id="order-list">
+		<table cellpadding="0" cellspacing="0">
+		<tr><td class="theader" colspan="8">订单列表</td></tr>
+		<tr>
+			<th>订单号</th>
+			<th>下单用户</th>
+			<th>订货人</th>
+			<th>金额总计</th>
+			<th>支付方式</th>
+			<th>收货时间</th>
+			<th>订单状态</th>
+			<th>操作</th>
+		</tr>
+		<tr>
+			<td>201405714345012</td>
+			<td>aaaaaaa</td>
+			<td>乐乐</td>
+			<td>2900</td>
+			<td>支付宝支付</td>
+			<td>任何时间（含节假日）</td>
+			<td>已收款&nbsp;已发货&nbsp;</td>
+			<td><span onclick="showOrderInfo();hideOrderList();">查看</span>&nbsp;&nbsp;<span onclick="showOrderComment();hideOrderList();">评论</span></td>
+			
+		</tr>
+		<tr>
+			<td>2014051617334312</td>
+			<td>aaaaaa</td>
+			<td>bb</td>
+			<td>60</td>
+			<td>支付宝支付</td>
+			<td>任何时间（含节假日）</td>
+			<td>已收款&nbsp;已发货&nbsp;已收货</td>
+			<td><span onclick="showOrderInfo();hideOrderList();">查看</span>&nbsp;&nbsp;<span onclick="showOrderComment();hideOrderList();">评论</span></td>
+			
+		</tr>
+		<tr>
+			<td>2014052220493112</td>
+			<td>aaaaaa</td>
+			<td>cc</td>
+			<td>4500</td>
+			<td>货到付款</td>
+			<td>任何时间（含节假日）</td>
+			<td>已发货&nbsp;</td>
+			<td><span onclick="showOrderInfo();hideOrderList();">查看</span>&nbsp;&nbsp;<span onclick="showOrderComment();hideOrderList();">评论</span></td>
+		</tr>
+		</table>
+		</div>
+
+		<div class="order-comment">
+		<form name="order-comment" method="post" action="">
+			<input type="radio" name="comment" value="1" checked/>好评
+			<input type="radio" name="comment" value="2" />中评
+			<input type="radio" name="comment" value="3" />差评
+			<br/><br/>
+			<textarea name="comment-word" placeholder="请填写评论~~~" rows="12" cols="100"></textarea>
+			<br/><br/>
+			<input type="button" class="button" value="提交评论" onclick="showOrderList();hideOrderComment();"/>
+		</form>
+	</div>
+											</div>
+											<!---->
+
+											<!---->
+
+											<div class="user-tips">
+												<form action="" method="post" class="basic-grey">
+													<p>留言|
+														<span>userTips</span>
+													</p>
+													<hr/>
+													<label>
+														<span>主题 :</span>
+														<input id="name" type="text" name="name" placeholder="请填写留言主题" />
+													</label>
+
+													<label>
+														<span>内容:</span>
+														<textarea id="message" name="message" placeholder="请填写留言具体内容"></textarea>
+													</label>
+
+													<label>
+														<span>&nbsp;</span>
+														<input type="button" class="button" value="提交" />
+													</label>
+												</form>
+											</div>		
+											<!---->
+											<!---->
+											<div class="tips-answer">
+												<div id="answer-message-list" class="answer-message-list">
+													<h1>留言回复&nbsp;|&nbsp;Message&nbsp;reply</h1>
+													<div class="answer-outline">
+														<h2>主题1</h2>
+														<time>时间</time>
+														<p>原来留言内容</p>
+														<a href="javascript:void(0);" onclick="hiddenList();showMessage();">&gt;&gt;查看回复</a>
+													</div>
+													<div class="answer-outline">
+														<h2>主题2</h2>
+														<time>时间</time>
+														<p>原来留言内容</p>
+														<a href="javascript:void(0);" onclick="hiddenList();showMessage();">&gt;&gt;查看回复</a>
+													</div>
+													<div class="answer-outline">
+														<h2>主题3</h2>
+														<time>时间</time>
+														<p>原来留言内容</p>
+														<a href="javascript:void(0);" onclick="hiddenList();showMessage();">&gt;&gt;查看回复</a>
+													</div>
+													<a class="load-more">more.......</a>
+												</div>
+												<div id="answer-message" class="answer-message">
+													<h2>主题</h2>
+													<span class="answer-time">时间</span>
+													<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span  class="old-news">原留言内容... ...<span></p>
+													<br/>
+													<hr class="distinct-line"/>
+													<br/>
+													<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span  class="new-answer">[管理员回复]:内容... ...<span></p>
+													<a href="#" onclick="showList();hiddenMessage();">&lt;&lt;返回&nbsp;&nbsp;&nbsp;</a>
+												</div>
+											</div>
+											<!---->
+										</div>
+									</div>
+
+									<div id="footer">
+										<div class="footer1">
+											<ul>
+												<li>成都信息工程大学</li>
+												<li>乐购商城</li>
+												<li>支付宝</li>
+												<li>微信</li>
+												<li>物流</li>
+											</ul>
+										</div>
+										<div class="footer2">
+											<span>关于成都信息工程大学</span>
+											<span>合作伙伴</span>
+											<span>联系我们</span>
+											<span>1111235</span>
+										</div>
+									</div>
+								</div>
+							</body>
+							<script type="text/javascript" src="../assets/jquery/jquery-3.2.0.js"></script>
+							<script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js" ></script>
+							</html>
